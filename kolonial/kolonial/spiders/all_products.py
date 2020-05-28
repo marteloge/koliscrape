@@ -19,6 +19,7 @@ class AllProductsSpider(SitemapSpider):
         ("/produkter/", "parse_product"),
     ]
 
+    # Can take input like id or different urls etc.
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
